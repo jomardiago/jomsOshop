@@ -45,7 +45,7 @@
   </div>
   
   <div class="col col-md-6">
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;" *ngIf="product.title">
       <img class="card-img-top" [src]="product.imageUrl" alt="Product Image" *ngIf="product.imageUrl">
       <div class="card-body">
         <h5 class="card-title">{{ product.title }}</h5>
